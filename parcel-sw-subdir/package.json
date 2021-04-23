@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "parcel": "^2.0.0-nightly.643"
+  },
+  "scripts": {
+    "build": "parcel build index.html"
+  }
+}
