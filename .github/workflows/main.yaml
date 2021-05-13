@@ -9,7 +9,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Other job
-        run: 'true'
+        run: 'false'
 
       - name: Merge master into staging-next
         id: staging_next
