@@ -12,5 +12,5 @@ jobs:
         with:
           issue-number: 1
           body: |
-            An automatic merge${{ failure() }}${{ failure() || ' hello' }}${{ true || ' t' }}${{ false || ' t' }}
+            An automatic merge${{ true || ' to' }}${{ false || ' fo' }}${{ true && ' ta' }}${{ false && ' fa' }}
 
