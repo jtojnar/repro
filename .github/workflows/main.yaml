@@ -13,7 +13,7 @@ jobs:
 
       - name: Merge master into staging-next
         id: staging_next
-        run: 'true'
+        run: 'false'
 
       - name: Merge staging-next into staging
         id: staging
