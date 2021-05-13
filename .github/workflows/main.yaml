@@ -1,0 +1,16 @@
+name: "test and"
+
+on: push
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Comment on failure
+        uses: peter-evans/create-or-update-comment@v1
+        with:
+          issue-number: 1
+          body: |
+            An automatic merge${{ failure() }}${{ failure() || ' hello' }}${{ true || ' t' }}${{ false || ' t' }}
+
