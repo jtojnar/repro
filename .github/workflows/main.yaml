@@ -7,10 +7,22 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+
+      - name: Other job
+        run: 'true'
+
+      - name: Merge master into staging-next
+        id: staging_next
+        run: 'true'
+
+      - name: Merge staging-next into staging
+        id: staging
+        run: 'true'
+
       - name: Comment on failure
         uses: peter-evans/create-or-update-comment@v1
+        if: ${{ failure() }}
         with:
           issue-number: 1
           body: |
-            An automatic merge${{ fromJSON('{"true-false": " true-false", "false-true": " false-true"}, "false-false": " false-false"}')[format('{0}-{1}', false, false)] }}${{ fromJSON('{"true-false": " true-false", "false-true": " false-true"}, "false-false": " false-false"}')[format('{0}-{1}', true, false)] }}${{ fromJSON('{"true-false": " true-false", "false-true": " false-true"}, "false-false": " false-false"}')[format('{0}-{1}', false, true)] }}
-
+            An automatic merge${{ fromJSON('{"true-false": " from master to staging-next", "false-true": " from staging-next to staging"}, "false-false": ""}')[format('{0}-{1}', steps.staging_next.outcome == 'failure', steps.staging.outcome == 'failure')] }} [failed](https://github.com/NixOS/nixpkgs/actions/runs/${{ github.run_id }}).
