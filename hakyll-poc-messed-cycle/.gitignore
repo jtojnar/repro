@@ -1,0 +1,12 @@
+# Direnv integration
+.direnv/
+
+# Hakyll
+_cache/
+_site/
+
+# Haskell builds
+cabal.sandbox.config
+.cabal-sandbox/
+.stack-work/
+dist*/

@@ -1,0 +1,3 @@
+#### Menu
+
+* [News](/en/news/)

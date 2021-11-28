@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>$title$</title>
+	</head>
+
+	<body>
+		$for(languageChooser)$
+			$if(active)$
+			<!-- Do not show the current language. -->
+			$else$
+			<li class="nav-item language-chooser">
+				<a class="nav-link" href="$url$" title="$languageName$">$languageSymbol$</a>
+			</li>
+			$endif$
+		$endfor$
+
+		<h2>$title$</h2>
+
+		$body$
+	</body>
+</html>
