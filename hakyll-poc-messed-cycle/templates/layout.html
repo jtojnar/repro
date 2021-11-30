@@ -7,13 +7,9 @@
 
 	<body>
 		$for(languageChooser)$
-			$if(active)$
-			<!-- Do not show the current language. -->
-			$else$
-			<li class="nav-item language-chooser">
-				<a class="nav-link" href="$url$" title="$languageName$">$languageSymbol$</a>
+			<li class="language-chooser">
+				<a href="$url$">$lang$</a>
 			</li>
-			$endif$
 		$endfor$
 
 		<h2>$title$</h2>

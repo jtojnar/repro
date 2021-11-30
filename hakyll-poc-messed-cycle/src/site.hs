@@ -1,12 +1,10 @@
 {-# LANGUAGE OverloadedStrings #-}
 
-import Common
+import Control.Monad (forM)
 import Data.List.Extra (dropPrefix)
 import Data.Maybe (fromMaybe)
-import qualified GHC.IO.Encoding as E
 import Hakyll
-import LanguageChooser (languageChooserField)
-import System.FilePath ((</>))
+import System.FilePath ((</>), joinPath, splitDirectories)
 
 languages :: [String]
 languages =
@@ -15,12 +13,46 @@ languages =
 	"en"
 	]
 
+
+-- Patterns
+
+postPattern :: Pattern
+postPattern = "content/*/news/*.md"
+
+languagePattern :: String -> Pattern
+languagePattern lang = fromGlob ("content" </> lang </> "**")
+
+routeNotSet :: String
+routeNotSet = ":route-not-set:"
+
+-- Versions
+
+destinationVersion :: String
+destinationVersion = "destination"
+
+-- Routes
+
+stripContentDirectory :: Routes
+stripContentDirectory = gsubRoute "content/" (const "")
+
+-- Path manipulation
+
+getContentLocale :: FilePath -> String
+getContentLocale path =
+	case splitDirectories path of
+		"content":locale:_rest -> locale
+		_-> error ("Not a content path: " ++ path)
+
+setContentLocale :: FilePath -> String -> FilePath
+setContentLocale path newLocale =
+	case splitDirectories path of
+		"content":_locale:rest -> joinPath ("content":newLocale:rest)
+		_-> error ("Not a content path: " ++ path)
+
 main :: IO ()
 main = do
-	E.setLocaleEncoding E.utf8
-
 	hakyll $ do
-		match contentPagesPattern $ version menuVersion $ compile destination
+		match postPattern $ version destinationVersion $ compile destination
 
 		-- Match news posts.
 		match postPattern $ do
@@ -28,7 +60,6 @@ main = do
 			compile $ do
 				pandocCompiler
 					>>= saveSnapshot "content"
-					>>= loadAndApplyTemplate "templates/post.html" defaultContext
 					>>= loadAndApplyTemplate "templates/layout.html" pageContext
 
 		-- Create news page for each supported language.
@@ -50,12 +81,6 @@ main = do
 
 		match "templates/*" $ compile templateCompiler
 
-postPattern :: Pattern
-postPattern = "content/*/news/*.md"
-
-languagePattern :: String -> Pattern
-languagePattern lang = fromGlob ("content" </> lang </> "**")
-
 pageContext :: Context String
 pageContext =
 	languageChooserField languages
@@ -67,3 +92,30 @@ destination =
 	setVersion Nothing <$> getUnderlying
 	>>= getRoute
 	>>= makeItem . fromMaybe routeNotSet
+
+-- | A field providing a list of links to pages with the same slug as the current page
+-- for each of the given languages.
+languageChooserField :: [String] -> Context a
+languageChooserField langs =
+	listFieldWith "languageChooser" languageChooserFieldInner (\_item -> do
+		identifier <- getUnderlying
+		let path = toFilePath identifier
+
+		existingLocalizedLinks <- forM langs (\lang -> do
+			let newPath = setContentLocale path lang
+
+			newItems <- loadAll (fromList $ map (setVersion $ Just destinationVersion) [fromFilePath newPath])
+			case map itemBody newItems of
+				[url] | url == routeNotSet -> return []
+				[] -> return []
+				[newRoute] -> return [(newRoute, lang)]
+				_ -> noResult ("languageChooser: This should not happen: Multiple routes found for " ++ newPath)
+			)
+
+		return (map (Item identifier) (concat existingLocalizedLinks))
+	)
+
+languageChooserFieldInner :: Context (String, String)
+languageChooserFieldInner =
+	field "url" (\item -> return . fst . itemBody $ item)
+	<> field "lang" (\item -> return . snd . itemBody $ item)
