@@ -16,14 +16,11 @@ languages =
 
 -- Patterns
 
-postPattern :: Pattern
-postPattern = "content/*/news/*.md"
+pagePattern :: Pattern
+pagePattern = "content/*/*.md"
 
 languagePattern :: String -> Pattern
 languagePattern lang = fromGlob ("content" </> lang </> "**")
-
-routeNotSet :: String
-routeNotSet = ":route-not-set:"
 
 -- Versions
 
@@ -52,23 +49,23 @@ setContentLocale path newLocale =
 main :: IO ()
 main = do
 	hakyll $ do
-		match postPattern $ version destinationVersion $ compile destination
+		match pagePattern $ version destinationVersion $ compile destination
 
-		-- Match news posts.
-		match postPattern $ do
+		-- Match page.
+		match pagePattern $ do
 			route $ stripContentDirectory `composeRoutes` setExtension "html"
 			compile $ do
 				pandocCompiler
 					>>= saveSnapshot "content"
 					>>= loadAndApplyTemplate "templates/layout.html" pageContext
 
-		-- Create news page for each supported language.
-		create (map (fromFilePath . (\lang -> "content" </> lang </> "news/index.html")) languages) $ do
+		-- Create main page for each supported language, listing the contents of individual pages.
+		create (map (fromFilePath . (\lang -> "content" </> lang </> "index.html")) languages) $ do
 			route stripContentDirectory
 			compile $ do
 				fp <- getResourceFilePath
 				let lang = getContentLocale (dropPrefix "./" fp)
-				posts <- recentFirst =<< loadAll (postPattern .&&. hasNoVersion .&&. languagePattern lang)
+				posts <- recentFirst =<< loadAll (pagePattern .&&. hasNoVersion .&&. languagePattern lang)
 
 				let indexContext = listField "posts" defaultContext (return posts)
 					<> bodyField "body"
@@ -85,6 +82,9 @@ pageContext :: Context String
 pageContext =
 	languageChooserField languages
 	<> defaultContext
+
+routeNotSet :: String
+routeNotSet = ":route-not-set:"
 
 -- | Get URL for current Item
 destination :: Compiler (Item String)

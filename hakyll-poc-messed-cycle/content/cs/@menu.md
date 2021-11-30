@@ -1,3 +1,0 @@
-#### Menu
-
-* [Novinky](/cs/news/)

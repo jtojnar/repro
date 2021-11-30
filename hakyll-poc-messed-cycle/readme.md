@@ -10,122 +10,107 @@ Initialising...
   Creating provider...
   Running rules...
 Checking for out-of-date items
-  [DEBUG] content/cs/news/2021-11-22-website-launch.md is out-of-date because it is new
-  [DEBUG] content/cs/news/index.html is out-of-date because it is new
-  [DEBUG] content/en/news/2021-11-22-website-launch.md is out-of-date because it is new
-  [DEBUG] content/en/news/index.html is out-of-date because it is new
+  [DEBUG] content/cs/2021-11-22-website-launch.md is out-of-date because it is new
+  [DEBUG] content/cs/index.html is out-of-date because it is new
+  [DEBUG] content/en/2021-11-22-website-launch.md is out-of-date because it is new
+  [DEBUG] content/en/index.html is out-of-date because it is new
   [DEBUG] templates/layout.html is out-of-date because it is new
-  [DEBUG] templates/post.html is out-of-date because it is new
   [DEBUG] templates/posts.html is out-of-date because it is new
-  [DEBUG] content/cs/news/2021-11-22-website-launch.md (menu) is out-of-date because it is new
-  [DEBUG] content/en/news/2021-11-22-website-launch.md (menu) is out-of-date because it is new
+  [DEBUG] content/cs/2021-11-22-website-launch.md (destination) is out-of-date because it is new
+  [DEBUG] content/en/2021-11-22-website-launch.md (destination) is out-of-date because it is new
 Compiling
-  [DEBUG] Processing content/cs/news/2021-11-22-website-launch.md
+  [DEBUG] Processing content/cs/2021-11-22-website-launch.md
   [DEBUG] Storing snapshot: content
-  [DEBUG] Processing content/cs/news/index.html
-  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: PatternDependency (And (Glob [Literal "content/",Capture,Literal "/news/",Capture,Literal ".md"]) (And (Version Nothing) (Glob [Literal "content/cs/",CaptureMany,Literal ""]))) (fromList [content/cs/news/2021-11-22-website-launch.md])
-  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: IdentifierDependency content/cs/news/2021-11-22-website-launch.md
-  [DEBUG] Compiler requirement found for: content/cs/news/index.html: content/cs/news/2021-11-22-website-launch.md (snapshot _final)
-  [DEBUG] Processing content/en/news/2021-11-22-website-launch.md
+  [DEBUG] Processing content/cs/index.html
+  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: PatternDependency (And (Glob [Literal "content/",Capture,Literal "/",Capture,Literal ".md"]) (And (Version Nothing) (Glob [Literal "content/cs/",CaptureMany,Literal ""]))) (fromList [content/cs/2021-11-22-website-launch.md])
+  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: IdentifierDependency content/cs/2021-11-22-website-launch.md
+  [DEBUG] Compiler requirement found for: content/cs/index.html: content/cs/2021-11-22-website-launch.md (snapshot _final)
+  [DEBUG] Processing content/en/2021-11-22-website-launch.md
   [DEBUG] Storing snapshot: content
-  [DEBUG] Processing content/en/news/index.html
-  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: PatternDependency (And (Glob [Literal "content/",Capture,Literal "/news/",Capture,Literal ".md"]) (And (Version Nothing) (Glob [Literal "content/en/",CaptureMany,Literal ""]))) (fromList [content/en/news/2021-11-22-website-launch.md])
-  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: IdentifierDependency content/en/news/2021-11-22-website-launch.md
-  [DEBUG] Compiler requirement found for: content/en/news/index.html: content/en/news/2021-11-22-website-launch.md (snapshot _final)
+  [DEBUG] Processing content/en/index.html
+  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: PatternDependency (And (Glob [Literal "content/",Capture,Literal "/",Capture,Literal ".md"]) (And (Version Nothing) (Glob [Literal "content/en/",CaptureMany,Literal ""]))) (fromList [content/en/2021-11-22-website-launch.md])
+  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: IdentifierDependency content/en/2021-11-22-website-launch.md
+  [DEBUG] Compiler requirement found for: content/en/index.html: content/en/2021-11-22-website-launch.md (snapshot _final)
   [DEBUG] Processing templates/layout.html
   updated templates/layout.html
-  [DEBUG] Processing templates/post.html
-  updated templates/post.html
   [DEBUG] Processing templates/posts.html
   updated templates/posts.html
-  [DEBUG] Processing content/cs/news/2021-11-22-website-launch.md (menu)
-  updated content/cs/news/2021-11-22-website-launch.md (menu)
-  [DEBUG] Processing content/en/news/2021-11-22-website-launch.md (menu)
-  updated content/en/news/2021-11-22-website-launch.md (menu)
-  [DEBUG] Processing content/cs/news/2021-11-22-website-launch.md
-  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: IdentifierDependency templates/post.html
-  [DEBUG] Compiler requirement found for: content/cs/news/2021-11-22-website-launch.md: templates/post.html (snapshot _final)
-  [DEBUG] Processing content/cs/news/index.html
-  [DEBUG] Compiler requirement found for: content/cs/news/index.html: content/cs/news/2021-11-22-website-launch.md (snapshot _final)
-  [DEBUG] Processing content/en/news/2021-11-22-website-launch.md
-  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: IdentifierDependency templates/post.html
-  [DEBUG] Compiler requirement found for: content/en/news/2021-11-22-website-launch.md: templates/post.html (snapshot _final)
-  [DEBUG] Processing content/en/news/index.html
-  [DEBUG] Compiler requirement found for: content/en/news/index.html: content/en/news/2021-11-22-website-launch.md (snapshot _final)
-  [DEBUG] Processing content/cs/news/2021-11-22-website-launch.md
-  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: IdentifierDependency content/cs/news/2021-11-22-website-launch.md
+  [DEBUG] Processing content/cs/2021-11-22-website-launch.md (destination)
+  updated content/cs/2021-11-22-website-launch.md (destination)
+  [DEBUG] Processing content/en/2021-11-22-website-launch.md (destination)
+  updated content/en/2021-11-22-website-launch.md (destination)
+  [DEBUG] Processing content/cs/2021-11-22-website-launch.md
   [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: IdentifierDependency templates/layout.html
-  [DEBUG] Compiler requirement found for: content/cs/news/2021-11-22-website-launch.md: templates/layout.html (snapshot _final)
-  [DEBUG] Processing content/cs/news/index.html
-  [DEBUG] Compiler requirement found for: content/cs/news/index.html: content/cs/news/2021-11-22-website-launch.md (snapshot _final)
-  [DEBUG] Processing content/en/news/2021-11-22-website-launch.md
-  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: IdentifierDependency content/en/news/2021-11-22-website-launch.md
+  [DEBUG] Compiler requirement found for: content/cs/2021-11-22-website-launch.md: templates/layout.html (snapshot _final)
+  [DEBUG] Processing content/cs/index.html
+  [DEBUG] Compiler requirement found for: content/cs/index.html: content/cs/2021-11-22-website-launch.md (snapshot _final)
+  [DEBUG] Processing content/en/2021-11-22-website-launch.md
   [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: IdentifierDependency templates/layout.html
-  [DEBUG] Compiler requirement found for: content/en/news/2021-11-22-website-launch.md: templates/layout.html (snapshot _final)
-  [DEBUG] Processing content/en/news/index.html
-  [DEBUG] Compiler requirement found for: content/en/news/index.html: content/en/news/2021-11-22-website-launch.md (snapshot _final)
-  [DEBUG] Processing content/cs/news/2021-11-22-website-launch.md
-  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: IdentifierDependency content/cs/news/2021-11-22-website-launch.md
-  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: PatternDependency (List (fromList [content/cs/news/2021-11-22-website-launch.md (menu)])) (fromList [content/cs/news/2021-11-22-website-launch.md (menu)])
-  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: IdentifierDependency content/cs/news/2021-11-22-website-launch.md (menu)
-  [DEBUG] Compiler requirement found for: content/cs/news/2021-11-22-website-launch.md: content/cs/news/2021-11-22-website-launch.md (menu) (snapshot _final)
-  [DEBUG] Processing content/cs/news/index.html
-  [DEBUG] Compiler requirement found for: content/cs/news/index.html: content/cs/news/2021-11-22-website-launch.md (snapshot _final)
-  [DEBUG] Processing content/en/news/2021-11-22-website-launch.md
-  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: IdentifierDependency content/en/news/2021-11-22-website-launch.md
-  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: PatternDependency (List (fromList [content/cs/news/2021-11-22-website-launch.md (menu)])) (fromList [content/cs/news/2021-11-22-website-launch.md (menu)])
-  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: IdentifierDependency content/cs/news/2021-11-22-website-launch.md (menu)
-  [DEBUG] Compiler requirement found for: content/en/news/2021-11-22-website-launch.md: content/cs/news/2021-11-22-website-launch.md (menu) (snapshot _final)
-  [DEBUG] Processing content/en/news/index.html
-  [DEBUG] Compiler requirement found for: content/en/news/index.html: content/en/news/2021-11-22-website-launch.md (snapshot _final)
-  [DEBUG] Processing content/cs/news/2021-11-22-website-launch.md
-  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: PatternDependency (List (fromList [content/en/news/2021-11-22-website-launch.md (menu)])) (fromList [content/en/news/2021-11-22-website-launch.md (menu)])
-  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: IdentifierDependency content/en/news/2021-11-22-website-launch.md (menu)
-  [DEBUG] Compiler requirement found for: content/cs/news/2021-11-22-website-launch.md: content/en/news/2021-11-22-website-launch.md (menu) (snapshot _final)
-  [DEBUG] Processing content/cs/news/index.html
-  [DEBUG] Compiler requirement found for: content/cs/news/index.html: content/cs/news/2021-11-22-website-launch.md (snapshot _final)
-  [DEBUG] Processing content/en/news/2021-11-22-website-launch.md
-  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: PatternDependency (List (fromList [content/en/news/2021-11-22-website-launch.md (menu)])) (fromList [content/en/news/2021-11-22-website-launch.md (menu)])
-  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: IdentifierDependency content/en/news/2021-11-22-website-launch.md (menu)
-  [DEBUG] Compiler requirement found for: content/en/news/2021-11-22-website-launch.md: content/en/news/2021-11-22-website-launch.md (menu) (snapshot _final)
-  [DEBUG] Processing content/en/news/index.html
-  [DEBUG] Compiler requirement found for: content/en/news/index.html: content/en/news/2021-11-22-website-launch.md (snapshot _final)
-  [DEBUG] Processing content/cs/news/2021-11-22-website-launch.md
-  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: IdentifierDependency content/cs/news/2021-11-22-website-launch.md
-  updated content/cs/news/2021-11-22-website-launch.md
-  [DEBUG] Routed to _site/cs/news/2021-11-22-website-launch.html
-  [DEBUG] Processing content/cs/news/index.html
-  [DEBUG] Compiler requirement found for: content/cs/news/index.html: content/cs/news/2021-11-22-website-launch.md (snapshot _final)
-  [DEBUG] Processing content/en/news/2021-11-22-website-launch.md
-  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: IdentifierDependency content/en/news/2021-11-22-website-launch.md
-  updated content/en/news/2021-11-22-website-launch.md
-  [DEBUG] Routed to _site/en/news/2021-11-22-website-launch.html
-  [DEBUG] Processing content/en/news/index.html
-  [DEBUG] Compiler requirement found for: content/en/news/index.html: content/en/news/2021-11-22-website-launch.md (snapshot _final)
-  [DEBUG] Processing content/cs/news/index.html
-  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: IdentifierDependency content/cs/news/2021-11-22-website-launch.md
+  [DEBUG] Compiler requirement found for: content/en/2021-11-22-website-launch.md: templates/layout.html (snapshot _final)
+  [DEBUG] Processing content/en/index.html
+  [DEBUG] Compiler requirement found for: content/en/index.html: content/en/2021-11-22-website-launch.md (snapshot _final)
+  [DEBUG] Processing content/cs/2021-11-22-website-launch.md
+  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: IdentifierDependency content/cs/2021-11-22-website-launch.md
+  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: PatternDependency (List (fromList [content/cs/2021-11-22-website-launch.md (destination)])) (fromList [content/cs/2021-11-22-website-launch.md (destination)])
+  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: IdentifierDependency content/cs/2021-11-22-website-launch.md (destination)
+  [DEBUG] Compiler requirement found for: content/cs/2021-11-22-website-launch.md: content/cs/2021-11-22-website-launch.md (destination) (snapshot _final)
+  [DEBUG] Processing content/cs/index.html
+  [DEBUG] Compiler requirement found for: content/cs/index.html: content/cs/2021-11-22-website-launch.md (snapshot _final)
+  [DEBUG] Processing content/en/2021-11-22-website-launch.md
+  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: IdentifierDependency content/en/2021-11-22-website-launch.md
+  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: PatternDependency (List (fromList [content/cs/2021-11-22-website-launch.md (destination)])) (fromList [content/cs/2021-11-22-website-launch.md (destination)])
+  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: IdentifierDependency content/cs/2021-11-22-website-launch.md (destination)
+  [DEBUG] Compiler requirement found for: content/en/2021-11-22-website-launch.md: content/cs/2021-11-22-website-launch.md (destination) (snapshot _final)
+  [DEBUG] Processing content/en/index.html
+  [DEBUG] Compiler requirement found for: content/en/index.html: content/en/2021-11-22-website-launch.md (snapshot _final)
+  [DEBUG] Processing content/cs/2021-11-22-website-launch.md
+  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: PatternDependency (List (fromList [content/en/2021-11-22-website-launch.md (destination)])) (fromList [content/en/2021-11-22-website-launch.md (destination)])
+  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: IdentifierDependency content/en/2021-11-22-website-launch.md (destination)
+  [DEBUG] Compiler requirement found for: content/cs/2021-11-22-website-launch.md: content/en/2021-11-22-website-launch.md (destination) (snapshot _final)
+  [DEBUG] Processing content/cs/index.html
+  [DEBUG] Compiler requirement found for: content/cs/index.html: content/cs/2021-11-22-website-launch.md (snapshot _final)
+  [DEBUG] Processing content/en/2021-11-22-website-launch.md
+  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: PatternDependency (List (fromList [content/en/2021-11-22-website-launch.md (destination)])) (fromList [content/en/2021-11-22-website-launch.md (destination)])
+  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: IdentifierDependency content/en/2021-11-22-website-launch.md (destination)
+  [DEBUG] Compiler requirement found for: content/en/2021-11-22-website-launch.md: content/en/2021-11-22-website-launch.md (destination) (snapshot _final)
+  [DEBUG] Processing content/en/index.html
+  [DEBUG] Compiler requirement found for: content/en/index.html: content/en/2021-11-22-website-launch.md (snapshot _final)
+  [DEBUG] Processing content/cs/2021-11-22-website-launch.md
+  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: IdentifierDependency content/cs/2021-11-22-website-launch.md
+  updated content/cs/2021-11-22-website-launch.md
+  [DEBUG] Routed to _site/cs/2021-11-22-website-launch.html
+  [DEBUG] Processing content/cs/index.html
+  [DEBUG] Compiler requirement found for: content/cs/index.html: content/cs/2021-11-22-website-launch.md (snapshot _final)
+  [DEBUG] Processing content/en/2021-11-22-website-launch.md
+  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: IdentifierDependency content/en/2021-11-22-website-launch.md
+  updated content/en/2021-11-22-website-launch.md
+  [DEBUG] Routed to _site/en/2021-11-22-website-launch.html
+  [DEBUG] Processing content/en/index.html
+  [DEBUG] Compiler requirement found for: content/en/index.html: content/en/2021-11-22-website-launch.md (snapshot _final)
+  [DEBUG] Processing content/cs/index.html
+  [DEBUG] Processing content/en/index.html
+  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: IdentifierDependency content/cs/2021-11-22-website-launch.md
+  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: IdentifierDependency content/en/2021-11-22-website-launch.md
   [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: IdentifierDependency templates/posts.html
-  [DEBUG] Compiler requirement found for: content/cs/news/index.html: templates/posts.html (snapshot _final)
-  [DEBUG] Processing content/en/news/index.html
-  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: IdentifierDependency content/en/news/2021-11-22-website-launch.md
+  [DEBUG] Compiler requirement found for: content/cs/index.html: templates/posts.html (snapshot _final)
   [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: IdentifierDependency templates/posts.html
-  [DEBUG] Compiler requirement found for: content/en/news/index.html: templates/posts.html (snapshot _final)
-  [DEBUG] Processing content/cs/news/index.html
+  [DEBUG] Compiler requirement found for: content/en/index.html: templates/posts.html (snapshot _final)
+  [DEBUG] Processing content/cs/index.html
   [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: IdentifierDependency templates/layout.html
-  [DEBUG] Compiler requirement found for: content/cs/news/index.html: templates/layout.html (snapshot _final)
-  [DEBUG] Processing content/en/news/index.html
+  [DEBUG] Compiler requirement found for: content/cs/index.html: templates/layout.html (snapshot _final)
+  [DEBUG] Processing content/en/index.html
   [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: IdentifierDependency templates/layout.html
-  [DEBUG] Compiler requirement found for: content/en/news/index.html: templates/layout.html (snapshot _final)
-  [DEBUG] Processing content/cs/news/index.html
-  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: IdentifierDependency content/cs/news/index.html
-  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: PatternDependency (List (fromList [content/cs/news/index.html (menu)])) (fromList [])
-  [DEBUG] Processing content/en/news/index.html
-  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: IdentifierDependency content/en/news/index.html
-  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: PatternDependency (List (fromList [content/cs/news/index.html (menu)])) (fromList [])
-  [ERROR] Hakyll.Core.Runtime.pickAndChase: Dependency cycle detected: content/cs/news/index.html depends on [(content/cs/news/2021-11-22-website-launch.md,"_final")], content/en/news/index.html depends on [(content/en/news/2021-11-22-website-launch.md,"_final")]
+  [DEBUG] Compiler requirement found for: content/en/index.html: templates/layout.html (snapshot _final)
+  [DEBUG] Processing content/cs/index.html
+  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: IdentifierDependency content/cs/index.html
+  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: PatternDependency (List (fromList [content/cs/index.html (destination)])) (fromList [])
+  [DEBUG] Processing content/en/index.html
+  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: IdentifierDependency content/en/index.html
+  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: PatternDependency (List (fromList [content/cs/index.html (destination)])) (fromList [])
+  [ERROR] Hakyll.Core.Runtime.pickAndChase: Dependency cycle detected: content/cs/index.html depends on [(content/cs/2021-11-22-website-launch.md,"_final")], content/en/index.html depends on [(content/en/2021-11-22-website-launch.md,"_final")]
 ```
 
-It worked with hakyll 4.14.0.0
+It worked with hakyll 4.14.1.0
 
 ```ShellSession
 $ cabal run -- site rebuild -v
@@ -137,116 +122,131 @@ Initialising...
   Creating provider...
   Running rules...
 Checking for out-of-date items
-  [DEBUG] content/cs/news/2021-11-22-website-launch.md is out-of-date because it is new
-  [DEBUG] content/cs/news/index.html is out-of-date because it is new
-  [DEBUG] content/en/news/2021-11-22-website-launch.md is out-of-date because it is new
-  [DEBUG] content/en/news/index.html is out-of-date because it is new
+  [DEBUG] content/cs/2021-11-22-website-launch.md is out-of-date because it is new
+  [DEBUG] content/cs/index.html is out-of-date because it is new
+  [DEBUG] content/en/2021-11-22-website-launch.md is out-of-date because it is new
+  [DEBUG] content/en/index.html is out-of-date because it is new
   [DEBUG] templates/layout.html is out-of-date because it is new
-  [DEBUG] templates/post.html is out-of-date because it is new
   [DEBUG] templates/posts.html is out-of-date because it is new
-  [DEBUG] content/cs/news/2021-11-22-website-launch.md (menu) is out-of-date because it is new
-  [DEBUG] content/en/news/2021-11-22-website-launch.md (menu) is out-of-date because it is new
+  [DEBUG] content/cs/2021-11-22-website-launch.md (destination) is out-of-date because it is new
+  [DEBUG] content/en/2021-11-22-website-launch.md (destination) is out-of-date because it is new
 Compiling
-  [DEBUG] Processing content/cs/news/2021-11-22-website-launch.md
+  [DEBUG] Processing content/cs/2021-11-22-website-launch.md
   [DEBUG] Storing snapshot: content
-  [DEBUG] Processing content/cs/news/2021-11-22-website-launch.md
-  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: IdentifierDependency templates/post.html
-  [DEBUG] Require templates/post.html (snapshot _final): chasing
-  [DEBUG] Processing templates/post.html
-  updated templates/post.html
-  [DEBUG] Processing content/cs/news/2021-11-22-website-launch.md
-  [DEBUG] Require templates/post.html (snapshot _final): OK
-  [DEBUG] Processing content/cs/news/2021-11-22-website-launch.md
-  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: IdentifierDependency content/cs/news/2021-11-22-website-launch.md
-  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: IdentifierDependency templates/layout.html
-  [DEBUG] Require templates/layout.html (snapshot _final): chasing
+  [DEBUG] Processing content/cs/index.html
+  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: PatternDependency (And (Glob [Literal "content/",Capture,Literal "/",Capture,Literal ".md"]) (And (Version Nothing) (Glob [Literal "content/cs/",CaptureMany,Literal ""]))) (fromList [content/cs/2021-11-22-website-launch.md])
+  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: IdentifierDependency content/cs/2021-11-22-website-launch.md
+  [DEBUG] Compiler requirement found for: content/cs/index.html, requirement: content/cs/2021-11-22-website-launch.md
+  [DEBUG] Require content/cs/2021-11-22-website-launch.md (snapshot _final)
+  [DEBUG] Processing content/en/2021-11-22-website-launch.md
+  [DEBUG] Storing snapshot: content
+  [DEBUG] Processing content/en/index.html
+  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: PatternDependency (And (Glob [Literal "content/",Capture,Literal "/",Capture,Literal ".md"]) (And (Version Nothing) (Glob [Literal "content/en/",CaptureMany,Literal ""]))) (fromList [content/en/2021-11-22-website-launch.md])
+  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: IdentifierDependency content/en/2021-11-22-website-launch.md
+  [DEBUG] Compiler requirement found for: content/en/index.html, requirement: content/en/2021-11-22-website-launch.md
+  [DEBUG] Require content/en/2021-11-22-website-launch.md (snapshot _final)
   [DEBUG] Processing templates/layout.html
   updated templates/layout.html
-  [DEBUG] Processing content/cs/news/2021-11-22-website-launch.md
-  [DEBUG] Require templates/layout.html (snapshot _final): OK
-  [DEBUG] Processing content/cs/news/2021-11-22-website-launch.md
-  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: IdentifierDependency content/cs/news/2021-11-22-website-launch.md
-  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: PatternDependency (List (fromList [content/cs/news/2021-11-22-website-launch.md (menu)])) (fromList [content/cs/news/2021-11-22-website-launch.md (menu)])
-  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: IdentifierDependency content/cs/news/2021-11-22-website-launch.md (menu)
-  [DEBUG] Require content/cs/news/2021-11-22-website-launch.md (menu) (snapshot _final): chasing
-  [DEBUG] Processing content/cs/news/2021-11-22-website-launch.md (menu)
-  updated content/cs/news/2021-11-22-website-launch.md (menu)
-  [DEBUG] Processing content/cs/news/2021-11-22-website-launch.md
-  [DEBUG] Require content/cs/news/2021-11-22-website-launch.md (menu) (snapshot _final): OK
-  [DEBUG] Processing content/cs/news/2021-11-22-website-launch.md
-  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: PatternDependency (List (fromList [content/en/news/2021-11-22-website-launch.md (menu)])) (fromList [content/en/news/2021-11-22-website-launch.md (menu)])
-  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: IdentifierDependency content/en/news/2021-11-22-website-launch.md (menu)
-  [DEBUG] Require content/en/news/2021-11-22-website-launch.md (menu) (snapshot _final): chasing
-  [DEBUG] Processing content/en/news/2021-11-22-website-launch.md (menu)
-  updated content/en/news/2021-11-22-website-launch.md (menu)
-  [DEBUG] Processing content/cs/news/2021-11-22-website-launch.md
-  [DEBUG] Require content/en/news/2021-11-22-website-launch.md (menu) (snapshot _final): OK
-  [DEBUG] Processing content/cs/news/2021-11-22-website-launch.md
-  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: IdentifierDependency content/cs/news/2021-11-22-website-launch.md
-  updated content/cs/news/2021-11-22-website-launch.md
-  [DEBUG] Routed to _site/cs/news/2021-11-22-website-launch.html
-  [DEBUG] Processing content/cs/news/index.html
-  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: PatternDependency (And (Glob [Literal "content/",Capture,Literal "/news/",Capture,Literal ".md"]) (And (Version Nothing) (Glob [Literal "content/cs/",CaptureMany,Literal ""]))) (fromList [content/cs/news/2021-11-22-website-launch.md])
-  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: IdentifierDependency content/cs/news/2021-11-22-website-launch.md
-  [DEBUG] Require content/cs/news/2021-11-22-website-launch.md (snapshot _final): OK
-  [DEBUG] Processing content/cs/news/index.html
-  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: IdentifierDependency content/cs/news/2021-11-22-website-launch.md
-  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: IdentifierDependency templates/posts.html
-  [DEBUG] Require templates/posts.html (snapshot _final): chasing
   [DEBUG] Processing templates/posts.html
   updated templates/posts.html
-  [DEBUG] Processing content/cs/news/index.html
-  [DEBUG] Require templates/posts.html (snapshot _final): OK
-  [DEBUG] Processing content/cs/news/index.html
+  [DEBUG] Processing content/cs/2021-11-22-website-launch.md (destination)
+  updated content/cs/2021-11-22-website-launch.md (destination)
+  [DEBUG] Processing content/en/2021-11-22-website-launch.md (destination)
+  updated content/en/2021-11-22-website-launch.md (destination)
+  [DEBUG] Processing content/cs/2021-11-22-website-launch.md
   [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: IdentifierDependency templates/layout.html
-  [DEBUG] Require templates/layout.html (snapshot _final): OK
-  [DEBUG] Processing content/cs/news/index.html
-  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: IdentifierDependency content/cs/news/index.html
-  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: PatternDependency (List (fromList [content/cs/news/index.html (menu)])) (fromList [])
-  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: PatternDependency (List (fromList [content/en/news/index.html (menu)])) (fromList [])
-  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: IdentifierDependency content/cs/news/index.html
-  updated content/cs/news/index.html
-  [DEBUG] Routed to _site/cs/news/index.html
-  [DEBUG] Processing content/en/news/2021-11-22-website-launch.md
-  [DEBUG] Storing snapshot: content
-  [DEBUG] Processing content/en/news/2021-11-22-website-launch.md
-  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: IdentifierDependency templates/post.html
-  [DEBUG] Require templates/post.html (snapshot _final): OK
-  [DEBUG] Processing content/en/news/2021-11-22-website-launch.md
-  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: IdentifierDependency content/en/news/2021-11-22-website-launch.md
+  [DEBUG] Compiler requirement found for: content/cs/2021-11-22-website-launch.md, requirement: templates/layout.html
+  [DEBUG] Require templates/layout.html (snapshot _final)
+  [DEBUG] Processing content/cs/index.html
+  [DEBUG] Compiler requirement found for: content/cs/index.html, requirement: content/cs/2021-11-22-website-launch.md
+  [DEBUG] Require content/cs/2021-11-22-website-launch.md (snapshot _final)
+  [DEBUG] Processing content/en/2021-11-22-website-launch.md
   [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: IdentifierDependency templates/layout.html
-  [DEBUG] Require templates/layout.html (snapshot _final): OK
-  [DEBUG] Processing content/en/news/2021-11-22-website-launch.md
-  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: IdentifierDependency content/en/news/2021-11-22-website-launch.md
-  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: PatternDependency (List (fromList [content/cs/news/2021-11-22-website-launch.md (menu)])) (fromList [content/cs/news/2021-11-22-website-launch.md (menu)])
-  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: IdentifierDependency content/cs/news/2021-11-22-website-launch.md (menu)
-  [DEBUG] Require content/cs/news/2021-11-22-website-launch.md (menu) (snapshot _final): OK
-  [DEBUG] Processing content/en/news/2021-11-22-website-launch.md
-  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: PatternDependency (List (fromList [content/en/news/2021-11-22-website-launch.md (menu)])) (fromList [content/en/news/2021-11-22-website-launch.md (menu)])
-  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: IdentifierDependency content/en/news/2021-11-22-website-launch.md (menu)
-  [DEBUG] Require content/en/news/2021-11-22-website-launch.md (menu) (snapshot _final): OK
-  [DEBUG] Processing content/en/news/2021-11-22-website-launch.md
-  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: IdentifierDependency content/en/news/2021-11-22-website-launch.md
-  updated content/en/news/2021-11-22-website-launch.md
-  [DEBUG] Routed to _site/en/news/2021-11-22-website-launch.html
-  [DEBUG] Processing content/en/news/index.html
-  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: PatternDependency (And (Glob [Literal "content/",Capture,Literal "/news/",Capture,Literal ".md"]) (And (Version Nothing) (Glob [Literal "content/en/",CaptureMany,Literal ""]))) (fromList [content/en/news/2021-11-22-website-launch.md])
-  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: IdentifierDependency content/en/news/2021-11-22-website-launch.md
-  [DEBUG] Require content/en/news/2021-11-22-website-launch.md (snapshot _final): OK
-  [DEBUG] Processing content/en/news/index.html
-  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: IdentifierDependency content/en/news/2021-11-22-website-launch.md
+  [DEBUG] Compiler requirement found for: content/en/2021-11-22-website-launch.md, requirement: templates/layout.html
+  [DEBUG] Require templates/layout.html (snapshot _final)
+  [DEBUG] Processing content/en/index.html
+  [DEBUG] Compiler requirement found for: content/en/index.html, requirement: content/en/2021-11-22-website-launch.md
+  [DEBUG] Require content/en/2021-11-22-website-launch.md (snapshot _final)
+  [DEBUG] Processing content/cs/2021-11-22-website-launch.md
+  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: IdentifierDependency content/cs/2021-11-22-website-launch.md
+  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: PatternDependency (List (fromList [content/cs/2021-11-22-website-launch.md (destination)])) (fromList [content/cs/2021-11-22-website-launch.md (destination)])
+  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: IdentifierDependency content/cs/2021-11-22-website-launch.md (destination)
+  [DEBUG] Compiler requirement found for: content/cs/2021-11-22-website-launch.md, requirement: content/cs/2021-11-22-website-launch.md (destination)
+  [DEBUG] Require content/cs/2021-11-22-website-launch.md (destination) (snapshot _final)
+  [DEBUG] Processing content/cs/index.html
+  [DEBUG] Compiler requirement found for: content/cs/index.html, requirement: content/cs/2021-11-22-website-launch.md
+  [DEBUG] Require content/cs/2021-11-22-website-launch.md (snapshot _final)
+  [DEBUG] Processing content/en/2021-11-22-website-launch.md
+  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: IdentifierDependency content/en/2021-11-22-website-launch.md
+  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: PatternDependency (List (fromList [content/cs/2021-11-22-website-launch.md (destination)])) (fromList [content/cs/2021-11-22-website-launch.md (destination)])
+  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: IdentifierDependency content/cs/2021-11-22-website-launch.md (destination)
+  [DEBUG] Compiler requirement found for: content/en/2021-11-22-website-launch.md, requirement: content/cs/2021-11-22-website-launch.md (destination)
+  [DEBUG] Require content/cs/2021-11-22-website-launch.md (destination) (snapshot _final)
+  [DEBUG] Processing content/en/index.html
+  [DEBUG] Compiler requirement found for: content/en/index.html, requirement: content/en/2021-11-22-website-launch.md
+  [DEBUG] Require content/en/2021-11-22-website-launch.md (snapshot _final)
+  [DEBUG] Processing content/cs/2021-11-22-website-launch.md
+  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: PatternDependency (List (fromList [content/en/2021-11-22-website-launch.md (destination)])) (fromList [content/en/2021-11-22-website-launch.md (destination)])
+  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: IdentifierDependency content/en/2021-11-22-website-launch.md (destination)
+  [DEBUG] Compiler requirement found for: content/cs/2021-11-22-website-launch.md, requirement: content/en/2021-11-22-website-launch.md (destination)
+  [DEBUG] Require content/en/2021-11-22-website-launch.md (destination) (snapshot _final)
+  [DEBUG] Processing content/cs/index.html
+  [DEBUG] Compiler requirement found for: content/cs/index.html, requirement: content/cs/2021-11-22-website-launch.md
+  [DEBUG] Require content/cs/2021-11-22-website-launch.md (snapshot _final)
+  [DEBUG] Processing content/en/2021-11-22-website-launch.md
+  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: PatternDependency (List (fromList [content/en/2021-11-22-website-launch.md (destination)])) (fromList [content/en/2021-11-22-website-launch.md (destination)])
+  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: IdentifierDependency content/en/2021-11-22-website-launch.md (destination)
+  [DEBUG] Compiler requirement found for: content/en/2021-11-22-website-launch.md, requirement: content/en/2021-11-22-website-launch.md (destination)
+  [DEBUG] Require content/en/2021-11-22-website-launch.md (destination) (snapshot _final)
+  [DEBUG] Processing content/en/index.html
+  [DEBUG] Compiler requirement found for: content/en/index.html, requirement: content/en/2021-11-22-website-launch.md
+  [DEBUG] Require content/en/2021-11-22-website-launch.md (snapshot _final)
+  [DEBUG] Processing content/cs/2021-11-22-website-launch.md
+  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: IdentifierDependency content/cs/2021-11-22-website-launch.md
+  updated content/cs/2021-11-22-website-launch.md
+  [DEBUG] Routed to _site/cs/2021-11-22-website-launch.html
+  [DEBUG] Processing content/cs/index.html
+  [DEBUG] Compiler requirement found for: content/cs/index.html, requirement: content/cs/2021-11-22-website-launch.md
+  [DEBUG] Require content/cs/2021-11-22-website-launch.md (snapshot _final)
+  [DEBUG] Processing content/en/2021-11-22-website-launch.md
+  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: IdentifierDependency content/en/2021-11-22-website-launch.md
+  updated content/en/2021-11-22-website-launch.md
+  [DEBUG] Routed to _site/en/2021-11-22-website-launch.html
+  [DEBUG] Processing content/en/index.html
+  [DEBUG] Compiler requirement found for: content/en/index.html, requirement: content/en/2021-11-22-website-launch.md
+  [DEBUG] Require content/en/2021-11-22-website-launch.md (snapshot _final)
+  [DEBUG] Processing content/cs/index.html
+  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: IdentifierDependency content/cs/2021-11-22-website-launch.md
   [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: IdentifierDependency templates/posts.html
-  [DEBUG] Require templates/posts.html (snapshot _final): OK
-  [DEBUG] Processing content/en/news/index.html
+  [DEBUG] Compiler requirement found for: content/cs/index.html, requirement: templates/posts.html
+  [DEBUG] Require templates/posts.html (snapshot _final)
+  [DEBUG] Processing content/en/index.html
+  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: IdentifierDependency content/en/2021-11-22-website-launch.md
+  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: IdentifierDependency templates/posts.html
+  [DEBUG] Compiler requirement found for: content/en/index.html, requirement: templates/posts.html
+  [DEBUG] Require templates/posts.html (snapshot _final)
+  [DEBUG] Processing content/cs/index.html
+  [DEBUG] Processing content/en/index.html
   [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: IdentifierDependency templates/layout.html
-  [DEBUG] Require templates/layout.html (snapshot _final): OK
-  [DEBUG] Processing content/en/news/index.html
-  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: IdentifierDependency content/en/news/index.html
-  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: PatternDependency (List (fromList [content/cs/news/index.html (menu)])) (fromList [])
-  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: PatternDependency (List (fromList [content/en/news/index.html (menu)])) (fromList [])
-  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: IdentifierDependency content/en/news/index.html
-  updated content/en/news/index.html
-  [DEBUG] Routed to _site/en/news/index.html
+  [DEBUG] Compiler requirement found for: content/cs/index.html, requirement: templates/layout.html
+  [DEBUG] Require templates/layout.html (snapshot _final)
+  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: IdentifierDependency templates/layout.html
+  [DEBUG] Compiler requirement found for: content/en/index.html, requirement: templates/layout.html
+  [DEBUG] Require templates/layout.html (snapshot _final)
+  [DEBUG] Processing content/cs/index.html
+  [DEBUG] Processing content/en/index.html
+  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: IdentifierDependency content/cs/index.html
+  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: PatternDependency (List (fromList [content/cs/index.html (destination)])) (fromList [])
+  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: PatternDependency (List (fromList [content/en/index.html (destination)])) (fromList [])
+  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: IdentifierDependency content/cs/index.html
+  updated content/cs/index.html
+  [DEBUG] Routed to _site/cs/index.html
+  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: IdentifierDependency content/en/index.html
+  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: PatternDependency (List (fromList [content/cs/index.html (destination)])) (fromList [])
+  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: PatternDependency (List (fromList [content/en/index.html (destination)])) (fromList [])
+  [DEBUG] Hakyll.Core.Compiler.Internal: Adding dependency: IdentifierDependency content/en/index.html
+  updated content/en/index.html
+  [DEBUG] Routed to _site/en/index.html
 Success
   [DEBUG] Removing tmp directory...
 ```
@@ -255,43 +255,38 @@ There is no cycle, according to the graph generated by https://github.com/jasper
 
 ```gv
 digraph {
-    subgraph "cluster_content/cs/news/2021-11-22-website-launch.md" {
-        "content/cs/news/2021-11-22-website-launch.md";
-        "content/cs/news/2021-11-22-website-launch.md (menu)";
+    subgraph "cluster_content/cs/2021-11-22-website-launch.md" {
+        "content/cs/2021-11-22-website-launch.md";
+        "content/cs/2021-11-22-website-launch.md (destination)";
     }
-    subgraph "cluster_content/cs/news/index.html" {
-        "content/cs/news/index.html";
+    subgraph "cluster_content/cs/index.html" {
+        "content/cs/index.html";
     }
-    subgraph "cluster_content/en/news/2021-11-22-website-launch.md" {
-        "content/en/news/2021-11-22-website-launch.md";
-        "content/en/news/2021-11-22-website-launch.md (menu)";
+    subgraph "cluster_content/en/2021-11-22-website-launch.md" {
+        "content/en/2021-11-22-website-launch.md";
+        "content/en/2021-11-22-website-launch.md (destination)";
     }
-    subgraph "cluster_content/en/news/index.html" {
-        "content/en/news/index.html";
+    subgraph "cluster_content/en/index.html" {
+        "content/en/index.html";
     }
     subgraph "cluster_templates/layout.html" {
         "templates/layout.html";
     }
-    subgraph "cluster_templates/post.html" {
-        "templates/post.html";
-    }
     subgraph "cluster_templates/posts.html" {
         "templates/posts.html";
     }
-    "content/cs/news/2021-11-22-website-launch.md" -> "templates/layout.html" [label=_final];
-    "content/cs/news/2021-11-22-website-launch.md" -> "templates/post.html" [label=_final];
-    "content/cs/news/2021-11-22-website-launch.md" -> "content/cs/news/2021-11-22-website-launch.md (menu)" [label=_final];
-    "content/cs/news/2021-11-22-website-launch.md" -> "content/en/news/2021-11-22-website-launch.md (menu)" [label=_final];
-    "content/cs/news/index.html" -> "content/cs/news/2021-11-22-website-launch.md" [label=_final];
-    "content/cs/news/index.html" -> "templates/layout.html" [label=_final];
-    "content/cs/news/index.html" -> "templates/posts.html" [label=_final];
-    "content/en/news/2021-11-22-website-launch.md" -> "templates/layout.html" [label=_final];
-    "content/en/news/2021-11-22-website-launch.md" -> "templates/post.html" [label=_final];
-    "content/en/news/2021-11-22-website-launch.md" -> "content/cs/news/2021-11-22-website-launch.md (menu)" [label=_final];
-    "content/en/news/2021-11-22-website-launch.md" -> "content/en/news/2021-11-22-website-launch.md (menu)" [label=_final];
-    "content/en/news/index.html" -> "content/en/news/2021-11-22-website-launch.md" [label=_final];
-    "content/en/news/index.html" -> "templates/layout.html" [label=_final];
-    "content/en/news/index.html" -> "templates/posts.html" [label=_final];
+    "content/cs/2021-11-22-website-launch.md" -> "templates/layout.html" [label=_final];
+    "content/cs/2021-11-22-website-launch.md" -> "content/cs/2021-11-22-website-launch.md (destination)" [label=_final];
+    "content/cs/2021-11-22-website-launch.md" -> "content/en/2021-11-22-website-launch.md (destination)" [label=_final];
+    "content/cs/index.html" -> "content/cs/2021-11-22-website-launch.md" [label=_final];
+    "content/cs/index.html" -> "templates/layout.html" [label=_final];
+    "content/cs/index.html" -> "templates/posts.html" [label=_final];
+    "content/en/2021-11-22-website-launch.md" -> "templates/layout.html" [label=_final];
+    "content/en/2021-11-22-website-launch.md" -> "content/cs/2021-11-22-website-launch.md (destination)" [label=_final];
+    "content/en/2021-11-22-website-launch.md" -> "content/en/2021-11-22-website-launch.md (destination)" [label=_final];
+    "content/en/index.html" -> "content/en/2021-11-22-website-launch.md" [label=_final];
+    "content/en/index.html" -> "templates/layout.html" [label=_final];
+    "content/en/index.html" -> "templates/posts.html" [label=_final];
 }
 ```
 
