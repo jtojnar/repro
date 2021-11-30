@@ -1,0 +1,34 @@
+digraph {
+    subgraph "cluster_content/cs/2021-11-22-website-launch.md" {
+        "content/cs/2021-11-22-website-launch.md" [style=bold];
+        "content/cs/2021-11-22-website-launch.md (destination)" [style=bold];
+    }
+    subgraph "cluster_content/cs/index.html" {
+        "content/cs/index.html" [style=dashed];
+    }
+    subgraph "cluster_content/en/2021-11-22-website-launch.md" {
+        "content/en/2021-11-22-website-launch.md" [style=bold];
+        "content/en/2021-11-22-website-launch.md (destination)" [style=bold];
+    }
+    subgraph "cluster_content/en/index.html" {
+        "content/en/index.html" [style=dashed];
+    }
+    subgraph "cluster_templates/layout.html" {
+        "templates/layout.html" [style=bold];
+    }
+    subgraph "cluster_templates/posts.html" {
+        "templates/posts.html" [style=bold];
+    }
+    "content/cs/2021-11-22-website-launch.md" -> "templates/layout.html" [label=_final];
+    "content/cs/2021-11-22-website-launch.md" -> "content/cs/2021-11-22-website-launch.md (destination)" [label=_final];
+    "content/cs/2021-11-22-website-launch.md" -> "content/en/2021-11-22-website-launch.md (destination)" [label=_final];
+    "content/cs/index.html" -> "content/cs/2021-11-22-website-launch.md" [label=_final];
+    "content/cs/index.html" -> "templates/layout.html" [label=_final];
+    "content/cs/index.html" -> "templates/posts.html" [label=_final];
+    "content/en/2021-11-22-website-launch.md" -> "templates/layout.html" [label=_final];
+    "content/en/2021-11-22-website-launch.md" -> "content/cs/2021-11-22-website-launch.md (destination)" [label=_final];
+    "content/en/2021-11-22-website-launch.md" -> "content/en/2021-11-22-website-launch.md (destination)" [label=_final];
+    "content/en/index.html" -> "content/en/2021-11-22-website-launch.md" [label=_final];
+    "content/en/index.html" -> "templates/layout.html" [label=_final];
+    "content/en/index.html" -> "templates/posts.html" [label=_final];
+}
