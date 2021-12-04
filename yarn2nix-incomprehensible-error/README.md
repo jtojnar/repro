@@ -1,5 +1,7 @@
 # yarn2nix-incomprehensible-error
 
+> **Turns out the hash fragment of the `resolved` URL is the `sha1` hash of the tarball and newer versions of Yarn no longer include it according to https://github.com/NixOS/nixpkgs/pull/119522.**
+
 When I try to build the simple npm package in this directory using yarn2nix, it fails with a trace that has little to do with the error (probably because yarn2nix uses IFD):
 
 ```ShellSession
