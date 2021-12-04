@@ -1,0 +1,9 @@
+{
+  "name": "yarn2nix-incomprehensible-error",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "caniuse-lite": "^1.0.30001219"
+  },
+  "packageManager": "yarn@1.22.17"
+}
