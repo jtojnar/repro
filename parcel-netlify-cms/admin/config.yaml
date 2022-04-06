@@ -1,0 +1,33 @@
+publish_mode: editorial_workflow
+
+media_folder: /files
+
+site_url: /
+
+backend:
+  name: github
+  repo: jtojnar/repro
+  branch: main
+
+collections:
+    files:
+      - name: topmenu
+        label: Top Menu
+        file: content/topmenu.yaml
+        fields:
+          - name: obj
+            widget: object
+            fields:
+              - name: label
+                label: Label
+                widget: string
+              - name: url
+                label: URL
+                widget: string
+          - name: items
+            label: "items"
+            widget: list
+            fields:
+              - name: label
+                label: Label
+                widget: string

@@ -1,0 +1,15 @@
+{
+  "private": true,
+  "dependencies": {
+    "netlify-cms": "^2.10.190"
+  },
+  "devDependencies": {
+    "@parcel/transformer-yaml": "^2.4.1",
+    "buffer": "^6.0.3",
+    "parcel": "^2.0.1"
+  },
+  "scripts": {
+    "build": "npx parcel build admin/index.html --dist-dir public/admin/ --public-url .",
+    "watch": "npx parcel admin/index.html --dist-dir public/admin/ --public-url ."
+  }
+}
