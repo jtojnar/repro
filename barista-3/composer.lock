@@ -1405,12 +1405,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TomasVotruba/barista.git",
-                "reference": "4b32e1f46310f13f50f2e6ac0241d371346d0132"
+                "reference": "545a0283b066e0d75d2ba1b422b587fa2723854d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TomasVotruba/barista/zipball/4b32e1f46310f13f50f2e6ac0241d371346d0132",
-                "reference": "4b32e1f46310f13f50f2e6ac0241d371346d0132",
+                "url": "https://api.github.com/repos/TomasVotruba/barista/zipball/545a0283b066e0d75d2ba1b422b587fa2723854d",
+                "reference": "545a0283b066e0d75d2ba1b422b587fa2723854d",
                 "shasum": ""
             },
             "require": {
@@ -1452,9 +1452,9 @@
             "description": "The Barista explores every Latte (file) for strict quality",
             "support": {
                 "issues": "https://github.com/TomasVotruba/barista/issues",
-                "source": "https://github.com/TomasVotruba/barista/tree/0.1.7"
+                "source": "https://github.com/TomasVotruba/barista/tree/main"
             },
-            "time": "2022-05-31T16:57:16+00:00"
+            "time": "2022-05-31T19:25:44+00:00"
         },
         {
             "name": "doctrine/instantiator",
