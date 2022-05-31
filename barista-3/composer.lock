@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5e47a36f16e95964e3544b2f88b4cc57",
+    "content-hash": "6ae506151a274b39d4e56d091a003914",
     "packages": [
         {
             "name": "latte/latte",
@@ -1405,12 +1405,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TomasVotruba/barista.git",
-                "reference": "08fa2dfd2e4d2027f2f6029be780e647b43f867c"
+                "reference": "4b32e1f46310f13f50f2e6ac0241d371346d0132"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TomasVotruba/barista/zipball/08fa2dfd2e4d2027f2f6029be780e647b43f867c",
-                "reference": "08fa2dfd2e4d2027f2f6029be780e647b43f867c",
+                "url": "https://api.github.com/repos/TomasVotruba/barista/zipball/4b32e1f46310f13f50f2e6ac0241d371346d0132",
+                "reference": "4b32e1f46310f13f50f2e6ac0241d371346d0132",
                 "shasum": ""
             },
             "require": {
@@ -1452,9 +1452,9 @@
             "description": "The Barista explores every Latte (file) for strict quality",
             "support": {
                 "issues": "https://github.com/TomasVotruba/barista/issues",
-                "source": "https://github.com/TomasVotruba/barista/tree/main"
+                "source": "https://github.com/TomasVotruba/barista/tree/0.1.7"
             },
-            "time": "2022-05-31T14:39:17+00:00"
+            "time": "2022-05-31T16:57:16+00:00"
         },
         {
             "name": "doctrine/instantiator",

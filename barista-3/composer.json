@@ -24,7 +24,8 @@
 	"require-dev": {
 		"nette/tester": "^2.3",
 		"symfony/thanks": "^1",
-		"barista/barista": "@dev"
+		"barista/barista": "@dev",
+		"symfony/console": "^6.0"
 	},
 	"autoload": {
 		"psr-4": {
