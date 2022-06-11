@@ -1,0 +1,16 @@
+{
+    "name": "jtojnar/rector-7231",
+    "type": "project",
+    "license": ["MIT"],
+    "require-dev": {
+        "rector/rector": "0.13.0"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Maintenance\\": "."
+        }
+    },
+    "scripts": {
+        "rector": "php vendor/bin/rector"
+    }
+}
