@@ -1,0 +1,11 @@
+{
+    "name": "jtojnar/rector-6683",
+    "type": "project",
+    "license": ["MIT"],
+    "scripts": {
+        "rector": "php vendor/bin/rector"
+    },
+    "require-dev": {
+        "rector/rector": "^0.14.2"
+    }
+}
